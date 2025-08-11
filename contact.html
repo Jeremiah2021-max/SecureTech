@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/Security Guard Badge Clipart PNG Images, Security Guard Logo Design Vector, Security, Guard, Logo PNG Image For Free Download.jpg" alt="SecureTech Logo" class="header-logo">
+            
+        </div>
+        <div class="h1"><h1>Secure <br> Tech</h1></div>
+        
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li class="nl"><a href="service.html">Service</a></li>
+                <li class="nl"><a href="about.html">About</a></li>
+                <li class="nl"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+            <div class="menu-container">
+                <div class="menu-toggle" onclick="toggleDiv()">Menu</div>
+                <div id="myDiv" class="content">
+                    <ul>
+                        <li class="nl"><a href="service.html">Service</a></li>
+                        <li class="nl"><a href="about.html">About</a></li>
+                        <li class="nl"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        
+    </header>
+    
+
+    <section>
+        <div class="CU">
+            <h2>Contact Us</h2>
+        </div>
+ <div class="container">
+     <form id="contact-form" action="http://localhost:3000/submit-form" method="post">
+            <label for="name">First Name:</label>
+            <input type="text" id="firstname" namespace="John" required>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="lastname" namespace="Mensah" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" namespace="+233********" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="Payment">Methods of Payment</label>
+            <select class="option" name="payment" id="payment" namespace="PAYMENT method">
+                <option value="Mobile Money">Select Payment Method</option>
+
+                <option value="">Mobile Money</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Cash">Cash</option>
+                <option value="Cryto Exchange">CRYPTO Exchange</option>
+
+            </select>
+            <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            <br><br>
+
+            <button class="submit" type="submit">Send</button>
+        </form>
+        <p id="responseMessage"></p>
+ </div>
+
+ 
+    <p class="Geneva">Stay connected and follow us on all social media platform</p>
+    
+   
+    <div class="logo-container">
+        <div>
+            <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="images/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+        </div>
+        <div>
+            <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="images/logos/google.svg" alt="..." aria-label="google Logo" /></a>
+        </div>
+        <div>
+            <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="images/logos/ibm.svg" alt="..." aria-label="ibm Logo" /></a>
+        </div>
+    </div>
+
+     
+
+
+    <footer>
+        <p>&copy; 2025 SecureTech. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

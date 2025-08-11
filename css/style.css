@@ -1,0 +1,520 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 228, 238);
+    
+    
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    margin: 12px;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    
+    background-image: url('.../jeremiah/Projects/Security Company/images/13.jpg');
+    background-size: auto;
+    color: white;
+    height: 200px;
+    padding: 15px 20px;
+    text-align: center;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: groove;
+    border-color: #00ccff;
+    border-bottom-width: 10px;
+
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    
+    border-radius: 50%;
+    
+    box-shadow: 0 0 30px rgb(232, 255, 253), 0 0 40px 20px turquoise;
+    animation: blink 5s infinite;
+}
+@keyframes blink {
+    0%, 100%{
+        box-shadow: 0 0 30px rgb(199, 248, 248), 0 0 30px 20px rgb(227, 233, 235);
+    }
+    40%,50%,60% {
+        box-shadow: 0 0 30px rgb(220, 221, 221), 0 0 0px 0px rgb(225, 226, 226);
+
+    }
+}
+
+
+
+
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    position: relative;
+
+}
+
+.nl:hover {
+   
+     font-family: monospace;
+    
+   
+}
+
+
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+    max-width: 72px;
+    display: flex;
+    flex-direction: column;
+
+    
+   
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    z-index: 1;
+    display: none;
+    flex-direction: row;
+    position: sticky;
+    cursor: pointer;
+}
+.menu-toggle:active{
+    max-width: 110px;
+
+}
+
+#myDiv {
+    max-height: 0;
+    width: 150px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    background-color: #9bf5cf;
+    display: block;
+}
+#myDiv.open {
+    max-height: 150px;
+    max-width: 80px;
+    padding: 5px;
+
+}
+
+.content ul {
+    list-style: none;
+    line-height: 30px;
+    max-width: 80px;
+
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.menulist {
+    
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    direction: rtl;
+    list-style: none;
+}
+
+.bar {
+    background: white;
+    height: 2px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #b0b7d4;
+    color: rgb(0, 0, 0);
+}
+
+.preview {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.services-container {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+   
+
+}
+
+.services-card {
+    background: rgb(217, 255, 220);
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0,0.1);
+}
+.services-container2 {
+    display: flex;
+    
+
+}
+
+h2 {
+    padding: 8px;
+    margin: 25px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    line-height: 60px;
+    text-shadow: 0px 5px 10px #7c8183;
+    
+
+}
+ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    padding: 4px;
+    list-style: square;
+    line-height: 25px;
+    
+}
+
+.why {
+    text-align: center;
+    padding: 0;
+    border-radius: 23rem;
+
+}
+
+.why ul {
+    list-style: none;
+    padding: 0;
+    
+}
+.why li {
+    font-size: 1.2rem;
+    padding: 30px;   
+}
+
+.comments {
+    
+    background: #a1a1cc;
+    text-align: center;
+    padding: 50px 20px;
+    border-top-style: groove;
+    border-width: 10px;
+    border-color: cornflowerblue;
+    border-top-left-radius: 10rcap;
+}
+
+
+.comment {
+    background: white;
+    padding: 20px;
+    max-width: 70%;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 10px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:active {
+    border-color: #007bff;
+}
+section.intro {
+    background-color: #f9fbfc;
+}
+
+.intro, .list, .cta {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: cursive;
+    font-size: 28px;
+    
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: #555;
+    
+}
+
+.list {
+    
+    padding: 40px 20px;
+}
+
+.items {
+    display: inline-block;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.items img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 9rem;
+}
+.items h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta {
+    background-image: url('C:/Users/USER/Desktop/Security Company/images/12.jpg');
+    color: white;
+    padding: 50px 20px;
+    border-top-style: groove;
+    border-width: 10px;
+    border-color: cornflowerblue;
+    border-top-left-radius: 10rcap;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 10px;
+    background: rgb(221, 231, 217);
+    font-size: larger;
+    color: rgb(3, 39, 17);
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue';
+    border-width: 10px;
+
+}
+.btn:hover {
+    background-color: #00ccff;
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li {
+        padding: 10px;
+    }
+    .menu-toggle {
+        display: flex;
+        
+    }
+    .menu {
+        display: flex;
+    }
+    .nav-links.actve {
+        display: flex;
+    }
+    .hero {
+        padding: 40px 10px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+} 
+    @media screen and(max-width: 320px){
+        body {
+            max-width: 100%;
+        }
+        .hero h2 {
+            font-size: 1.5rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .btn {
+            font-size: 0.85rem;
+            padding: 8px 18px;
+        }
+        .h1 {
+            width: 110px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .CU {
+        font-family: 'Times New Roman';
+        font-size: 150px;
+        justify-content: center;
+        width: 250px;
+        direction: rtl;
+    
+    }
+
+.container {
+    background-color: #c2ece0;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input,textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 3px;
+    border: 1px solid #a1a0a0;
+    border-radius: 12px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f34a4a;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px #2c055f
+}
+
+button:hover {
+    background: #fffb00;
+    transition: 1s;
+    color: #000000;
+    box-shadow: 0 3px 5px #232027
+}
+
+button:active {
+    background: #017e27;
+    transition: 0.4s;
+    color: rgb(231, 229, 208);
+    box-shadow: 0 3px 5px #023941
+}
+
+
+.follow {
+    padding: auto;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: table-column
+   
+}
+
+.social {
+    width: 1px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #000000;
+    
+}
+.logo-container {
+    max-width:200px;
+    padding: 10px;
+    
+
+   
+    
+}
+
+
+footer {
+    
+    text-align: center;
+    background-color: #0f0e47;
+    color: white;
+    padding: 10px;
+    height: 100px;
+   
+
+}
